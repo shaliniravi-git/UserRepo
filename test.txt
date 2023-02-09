@@ -1,0 +1,23 @@
+package com.sp.springboot.springsecurity.entity;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserRoles {
+
+    @Id
+    @GeneratedValue
+    @Column(name = "Role ID")
+    private int id;
+
+    @Column(name = "User Roles")
+    private String userRoles;
+}
